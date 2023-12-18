@@ -1,0 +1,16 @@
+.Navbar{
+    background: gray;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;
+    padding: 1rem;
+    display: flex;
+}
+.bar img{
+    height: 6rem;
+    width: 6rem;
+}
+.nav img{
+    height: 2rem;
+    width: 2rem;
+}

@@ -1,0 +1,15 @@
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  text-align: center;
+}
+.secContainer{
+  display: flex;
+  flex-direction: column;
+  height: 90vh;
+  background-color: #f0f0f0; 
+  margin-top: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: 1px solid #ccc; 
+  position: relative;
+}
