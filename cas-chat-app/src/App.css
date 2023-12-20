@@ -6,7 +6,7 @@
 .secContainer{
   display: flex;
   flex-direction: column;
-  height: 90vh;
+  height: 150vh;
   background-color: #f0f0f0; 
   margin-top: 10px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
