@@ -1,8 +1,5 @@
 import React from 'react';
 import './Navbar.css';
-import { auth } from '../../firebase';
-import {useAuthState} from 'react-firebase-hooks/auth';
-import SignIn from '../SignIn/SignIn'; 
 
 const Navbar = () => {
 
@@ -18,7 +15,7 @@ const Navbar = () => {
             <div className='nav'>
                 <img src='./menu-bar.png' alt='menu-bar' onClick={handleMenuClick} />
             </div>
-            <SignIn />
+        
         </div>
     );
 };
