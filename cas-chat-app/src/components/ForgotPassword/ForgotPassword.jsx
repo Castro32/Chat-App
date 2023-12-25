@@ -9,6 +9,7 @@ const ForgotPassword=()=>{
   };
     return(
         <div className='container'>
+          <img src='chat.jpg' alt='logo'/>
           <div className='input'>
           <img src='./mail_646135.png' alt='Email' />
           <input type='email' placeholder='example@gmail.com' />

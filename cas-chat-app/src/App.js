@@ -5,7 +5,6 @@ import {useAuthState} from 'react-firebase-hooks/auth'
 import firebase from './firebase';
 import SignIn from './components/SignIn/SignIn';
 
-
 function App() {
   return (
     <div className="contaner">
@@ -13,7 +12,6 @@ function App() {
         <Navbar/>
         <SignIn/>
       </section>
-      
     </div>
   );
 }
