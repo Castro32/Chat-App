@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import GoogleButton from 'react-google-button'
 import './SignIn.css'
-
-
+import {auth} from '../../firebase'
+import {getAuth,GoogleAuthProvider, signInWithRedirect} from 'firebase/auth'
 
 const SignIn =()=>{
     const [action, setAction] = useState('Sign Up');
@@ -10,6 +10,14 @@ const SignIn =()=>{
 
     const togglePasswordVisibility = () => {
     setShowPassword(!showPassword);
+  };
+  
+  const {user} = useState(auth)
+  console.log(user)
+  
+  const googleSignIn = () => {
+    const provider = new GoogleAuthProvider();
+    signInWithRedirect(auth, provider);
   };
 
     return(
@@ -66,15 +74,10 @@ const SignIn =()=>{
         </div>
       </div>
       <div className="button">
-     <GoogleButton/>
+     <GoogleButton onClick={googleSignIn}/>
       </div>
     </div>
      
   );
 };
-
-           
-
-
-
 export default SignIn
