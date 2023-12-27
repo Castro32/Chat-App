@@ -1,4 +1,4 @@
-import React from 'react';
+import React, {useState}from 'react';
 import './ForgotPassword.css';
 const ForgotPassword=()=>{
   const [action, setAction] = useState('Sign Up');
