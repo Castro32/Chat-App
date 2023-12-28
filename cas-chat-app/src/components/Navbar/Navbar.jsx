@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Navbar.css';
+import SignIn from '../SignIn/SignIn';
 
 const Navbar = () => {
     const [showMenu, setShowMenu] = useState(false);
@@ -17,7 +18,9 @@ const Navbar = () => {
                 <img src='./menu-bar.png' alt='menu-bar' onClick={handleMenuClick} />
             </div>
             {showMenu && ( 
+                
                 <div className=" cont h-menu">
+                    {user ? <SignIn /> : null}
                     <a href="chat" style={{ gap: '10px' }}>Chat</a>
                     <a href="voice call" style={{ padding: '1px' }}>Voice Call</a>
                     <a href="video call" style={{ padding: '1px' }}>Video Call</a>

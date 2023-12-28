@@ -1,8 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import GoogleButton from 'react-google-button'
 import './SignIn.css'
 import {auth} from '../../firebase'
 import {getAuth,GoogleAuthProvider, signInWithRedirect} from 'firebase/auth'
+
 
 const SignIn =()=>{
     const [action, setAction] = useState('Sign Up');

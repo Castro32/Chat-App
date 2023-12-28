@@ -39,7 +39,7 @@
     display: flex;
     align-items: center;
     margin: auto;
-    width: 300px;
+    width: 330px;
     height: 40px;
     background: #eaeaea;
     border-radius: 6px;
@@ -52,7 +52,7 @@
 }
 .inputs input{
     height: 30px;
-    width: 150px;
+    width: 200px;
     background: transparent;
     border: none;
     outline: none;
